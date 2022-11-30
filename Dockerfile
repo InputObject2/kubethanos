@@ -5,7 +5,7 @@ ENV GO111MODULE on
 RUN apk --no-cache add git
 WORKDIR /go/src/kubethanos
 COPY . .
-RUN go run main.go --namespaces=!kube-system
+#RUN go run main.go --namespaces=!kube-system
 ENV GOARCH amd64
 RUN go build -o /bin/kubethanos -v \
   -ldflags "-X main.version=$(git describe --tags --always --dirty) -w -s"
