@@ -1,0 +1,17 @@
+apiVersion: v1
+entries:
+  kube-thanos:
+  - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2022-11-30T13:56:10.028191757Z"
+    description: Chaos with Thanos' Snap
+    digest: 5a0727393115a35b1a41413e97b4132a6db58ad7c6cd912ae9c063295552ba06
+    maintainers:
+    - name: InputObject2
+      url: https://github.com/InputObject2
+    name: kube-thanos
+    type: application
+    urls:
+    - https://github.com/InputObject2/kubethanos/releases/download/kube-thanos-0.0.1/kube-thanos-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-11-30T13:56:10.028202757Z"
