@@ -1,0 +1,10 @@
+---
+apiVersion: v2
+version: 0.0.1
+appVersion: 0.0.3
+name: kube-thanos
+description: Chaos with Thanos' Snap
+type: application
+maintainers:
+  - name: InputObject2
+    url: https://github.com/InputObject2
