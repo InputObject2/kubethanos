@@ -1,0 +1,16 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: snap
+  namespace: {{ .Release.Namespace }}
+spec:
+  ttlSecondsAfterFinished: 100
+
+  template:
+    spec:
+      serviceAccountName: thanos
+      containers:
+      - name: thanos
+        image: ghcr.io/inputobject2/kubethanos:latest
+      restartPolicy: Never
